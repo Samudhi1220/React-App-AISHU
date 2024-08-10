@@ -1,0 +1,72 @@
+[
+  {
+    "id": 1,
+    "name": "Classic Jacket",
+    "price": 79.99,
+    "image": "https://s7d2.scene7.com/is/image/aeo/0381_3411_896_of?$pdp-m-opt$",
+    "isBestSeller": true
+  },
+  {
+    "id": 2,
+    "name": "Elegant Coat",
+    "price": 129.99,
+    "image": "https://assets.ajio.com/medias/sys_master/root/20240611/MPIE/66683e4916fd2c6e6a8f2c88/-473Wx593H-461602115-blue-MODEL.jpg",
+    "isBestSeller": true
+  },
+  {
+    "id": 3,
+    "name": "Comfortable Trousers",
+    "price": 59.99,
+    "image": "trousers.jpg",
+    "isBestSeller": false
+  },
+  {
+    "id": 4,
+    "name": "Stylish Top",
+    "price": 39.99,
+    "image": "top.jpg",
+    "isBestSeller": false
+  },
+  {
+    "id": 5,
+    "name": "Casual T-Shirt",
+    "price": 25.99,
+    "image": "https://gflock.lk/cdn/shop/files/03BWEB_0089abc0-7cd8-496a-904b-42055c751547.jpg?v=1703098570",
+    "isBestSeller": true
+  },
+  {
+    "id": 6,
+    "name": "Elegant Skirt",
+    "price": 45.99,
+    "image": "skirt.jpg",
+    "isBestSeller": false
+  },
+  {
+    "id": 7,
+    "name": "Bridal Dress",
+    "price": 299.99,
+    "image": "https://www.monsoon.co.uk/dw/image/v2/BDLV_PRD/on/demandware.static/-/Sites-monsoon-master-catalog/default/dw270fb8a9/images/large/21_20000140016_1.jpg?sw=594&sh=761&sm=cut",
+    "isBestSeller": true
+  },
+  {
+    "id": 8,
+    "name": "Warm Sweater",
+    "price": 49.99,
+    "image": "sweater.jpg",
+    "isBestSeller": false
+  },
+  {
+    "id": 9,
+    "name": "Trending Jacket",
+    "price": 89.99,
+    "image": "trending-jacket.jpg",
+    "isBestSeller": false
+  },
+  {
+    "id": 10,
+    "name": "New Fashion Coat",
+    "price": 139.99,
+    "image": "https://insertface.com/fb/1837/new-fashion-coat-pant-face-1836910-qnzua-fb.jpg",
+    "isBestSeller": true
+  }
+]

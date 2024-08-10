@@ -1,0 +1,34 @@
+[
+  {
+    "name": "Jackets",
+    "image": "/images/jackets.jpg"
+  },
+  {
+    "name": "Coats",
+    "image": "/images/coats.jpg"
+  },
+  {
+    "name": "Trousers",
+    "image": "/images/trousers.jpg"
+  },
+  {
+    "name": "Tops",
+    "image": "/images/tops.jpg"
+  },
+  {
+    "name": "T-shirts",
+    "image": "/images/tshirts.jpg"
+  },
+  {
+    "name": "Skirts",
+    "image": "/images/skirts.jpg"
+  },
+  {
+    "name": "Bridals",
+    "imageUrl": "/images/bridals.jpg"
+  },
+  {
+    "name": "Sweaters",
+    "imageUrl": "/images/sweaters.jpg"
+  }
+]
