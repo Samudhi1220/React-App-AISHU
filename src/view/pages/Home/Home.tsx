@@ -82,18 +82,18 @@ class Home extends Component<{}, State> {
                     </div>
                 </section>
                 {/* Best Seller Section */}
-                <section className="py-20 bg-white">
+                <section className="py-10 bg-white">
                     <div className="container mx-auto px-4">
-                        <h2 className="text-4xl font-bold text-center mb-10">Best Seller</h2>
+                        <h2 className="text-4xl text-tertiary font-extralight  mb-10">RECENT PRODUCTS</h2>
                         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8">
                             {data.filter((product: ProductModel) => product.isBestSeller).map((product: ProductModel) => (
                                 <div key={product.id}
                                      className="border p-4 rounded-lg text-center shadow-lg hover:shadow-2xl transition-shadow">
-                                    <img src={product.image} alt={product.name} className="h-48 mx-auto"/>
+                                    <img src={product.image} alt={product.name} className="h-48 mx-auto w-75"/>
                                     <h3 className="mt-4 font-semibold text-lg">{product.name}</h3>
                                     <p className="mt-2 text-gray-600">${product.price}</p>
                                     <button
-                                        className="mt-4 px-6 py-2 bg-black text-white rounded-full hover:bg-gray-800 transition">
+                                        className="mt-4 px-6 py-2 bg-black text-white rounded-full hover:bg-gray-700 transition">
                                         Add to Cart
                                     </button>
                                 </div>
@@ -103,20 +103,20 @@ class Home extends Component<{}, State> {
                 </section>
 
                 {/* Azedw Categories Section */}
-                <section className="py-20 bg-gradient-to-r from-gray-100 to-gray-200">
+                <section className=" bg-black-to-r to-gray-800">
                     <div className="container mx-auto px-4">
-                        <h2 className="text-4xl font-extrabold text-center mb-12 text-gray-800 tracking-tight">Azedw
+                        <h2 className="text-2xl font-semibold text-center  mb-8 mt-8 text-gray-800 tracking-tight">AISHU
                             Categories</h2>
                         <div
-                            className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-4 text-center">
+                            className="grid  sm:grid-cols-3 md:grid-cols-3 lg:grid-cols-8 gap-5 text-center">
                             {categories.map((category) => (
                                 <div key={category.name}
                                      className="group relative overflow-hidden rounded-lg shadow-lg transform hover:-translate-y-1 hover:scale-105 transition duration-300 ease-in-out">
                                     <div
-                                     className="absolute inset-0 bg-gradient-to-b from-transparent to-black opacity-70"></div>
-                                    <h3 className="absolute inset-x-0 bottom-0 p-4 font-semibold text-lg text-white z-10">{category.name}</h3>
+                                     className="absolute inset-0 bg-gradient from-transparent to-black opacity-60"></div>
+                                    <h3 className="absolute inset-x-0 bottom-0 p-8 font-semibold text-lg text-amber-50 z-10">{category.name}</h3>
                                     <img src={category.image} alt={category.name}
-                                         className="w-full h-64 object-cover"/>
+                                         className="w-full h-60 object-cover"/>
 
                                 </div>
                             ))}

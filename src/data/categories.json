@@ -1,34 +1,34 @@
 [
   {
     "name": "Jackets",
-    "image": "/images/jackets.jpg"
+    "image": "https://www.monterrain.co.uk/images/products/medium/4094072.jpg"
   },
   {
     "name": "Coats",
-    "image": "/images/coats.jpg"
+    "image": "https://www.farmers.co.nz/INTERSHOP/static/WFS/Farmers-Shop-Site/-/Farmers-Shop/en_NZ/product/68/61/23/80/01/6861238001_51_W500_H652.jpg?lastmodified=202402011424034"
   },
   {
     "name": "Trousers",
-    "image": "/images/trousers.jpg"
+    "image": "https://www.lilysilk.com/media/catalog/product/m2_custom/9890/41/1.jpg?quality=80&bg-color=255%2C255%2C255&fit=bounds&width=1800"
   },
   {
     "name": "Tops",
-    "image": "/images/tops.jpg"
+    "image": "https://img.tatacliq.com/images/i13/450Wx545H/MP000000018948586_450Wx545H_202308272322071.jpeg"
   },
   {
     "name": "T-shirts",
-    "image": "/images/tshirts.jpg"
+    "image": "https://www.polo.co.za/media/catalog/product/cache/5b1f96c9d3a85e7c6ab4cda1bf935179/0/0/0043408_chloe_ss_logo_t-shirt_classic_wine3480_np.jpg"
   },
   {
     "name": "Skirts",
-    "image": "/images/skirts.jpg"
+    "image": "https://www.bodenimages.com/productimages/r1aproductlarge/23wsum_r0299_blu_m01.jpg"
   },
   {
     "name": "Bridals",
-    "imageUrl": "/images/bridals.jpg"
+    "image": "https://www.monsoon.co.uk/dw/image/v2/BDLV_PRD/on/demandware.static/-/Sites-monsoon-master-catalog/default/dwc5b62e6e/images/large/21_54082246_1.jpg?sw=594&sh=761&sm=cut"
   },
   {
     "name": "Sweaters",
-    "imageUrl": "/images/sweaters.jpg"
+    "image": "https://www.optimized-rlmedia.io/is/image/PoloGSI/s7-1474900_alternate10?$plpDeskRFAlt$"
   }
 ]
