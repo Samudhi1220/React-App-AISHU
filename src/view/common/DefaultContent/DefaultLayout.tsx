@@ -13,7 +13,7 @@ export class DefaultLayout extends Component {
             <>
                 <NavBar/>
                 <MainContent/>
-
+                <Footer/>
 
 
             </>

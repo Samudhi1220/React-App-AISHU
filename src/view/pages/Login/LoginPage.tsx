@@ -13,7 +13,7 @@ export class LoginPage extends React.Component {
 
                     <div className="flex justify-center space-x-8">
                         {/* Login Form */}
-                        <div className="w-full md:w-1/2 bg-white shadow-md rounded-lg p-8">
+                        <div className="w-full md:w-1/2 bg-gradient-to-r b shadow-md rounded-lg p-8">
                             <h3 className="text-xl font-bold mb-4">Login</h3>
                             <form>
                                 <div className="mb-4">

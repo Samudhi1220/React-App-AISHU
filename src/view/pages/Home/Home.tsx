@@ -44,10 +44,10 @@ class Home extends Component<{}, State> {
                     <div
                         className="absolute inset-0  bg-gradient  bg-opacity-50 from-white via-white to-transparent"></div>
                     <div className="container px-4 relative z-20">
-                        <h1 className="text-6xl font-bold text-black leading-tight">
-                            Stylish Coat
+                        <h1 className="text-8xl font-light font-bold text-amber-50 leading-tight">
+                            STYLISH COAT
                         </h1>
-                        <p className="text-lg mt-4 text-black uppercase tracking-widest">
+                        <p className="text-xl mt-4 text-black uppercase tracking-widest">
                             Stylish Shop
                         </p>
                         <button
