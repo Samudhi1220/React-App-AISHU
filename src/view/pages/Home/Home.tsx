@@ -11,7 +11,7 @@ import categories from '../../../data/categories.json'
 interface State {
     products: ProductModel[];
     collections: CollectionItem[];
-    category:Categories[];
+    category: Categories[];
 }
 
 class Home extends Component<{}, State> {
@@ -19,8 +19,8 @@ class Home extends Component<{}, State> {
         super(props);
         this.state = {
             products: [],
-            collections:[],
-            category:[],
+            collections: [],
+            category: [],
         };
     }
 
@@ -35,14 +35,11 @@ class Home extends Component<{}, State> {
     }
 
     render() {
-
-
         return (
             <div className="bg-gray-50">
                 {/* Hero Section */}
-                <section className="relative h-screen   flex items-center justify-center w-full bg-gray-100">
-                    <div
-                        className="absolute inset-0  bg-gradient  bg-opacity-50 from-white via-white to-transparent"></div>
+                <section className="relative h-screen flex items-center justify-center w-full bg-gray-100">
+                    <div className="absolute inset-0 bg-gradient bg-opacity-50 from-white via-white to-transparent"></div>
                     <div className="container px-4 relative z-20">
                         <h1 className="text-8xl font-light font-bold text-amber-50 leading-tight">
                             STYLISH COAT
@@ -56,9 +53,13 @@ class Home extends Component<{}, State> {
                         </button>
                     </div>
                     <div className="absolute inset-0 bg-cover bg-center"
-                         style={{backgroundImage: `url(${heroImage})`, objectFit: 'cover'}}>
+                         style={{ backgroundImage: `url(${heroImage})`, objectFit: 'cover' }}>
                     </div>
                 </section>
+
+
+
+                {/* Collections Section */}
                 <section className="py-20 bg-white">
                     <div className="container mx-auto px-4">
                         <div className="grid md:grid-cols-3 gap-4">
@@ -81,6 +82,7 @@ class Home extends Component<{}, State> {
                         </div>
                     </div>
                 </section>
+
                 {/* Best Seller Section */}
                 <section className="py-10 bg-white">
                     <div className="container mx-auto px-4">
@@ -102,51 +104,54 @@ class Home extends Component<{}, State> {
                     </div>
                 </section>
 
-                {/* Azedw Categories Section */}
-                <section className=" bg-black-to-r to-gray-800">
+                {/* Trending & New Fashion Collection */}
+                <section className=" bg-gray-900 text-white py-8">
+                    <div className="container mx-auto px-4 flex items-center justify-between">
+                        <div className="w-1/3">
+                            <img
+                                src={heroImage}  // Use the correct image path here
+                                alt="Gray Sweatshirt"
+                                className="w-full h-full object-cover"
+                            />
+                        </div>
+                        <div className="w-1/2 text-center">
+
+                            <h1 className="text-5xl font-bold mb-4">Trending New Fashion</h1>
+                            <p className="text-lg text-gray-300 mb-8">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores nisi
+                                distinctio magni, iure deserunt doloribus optio.
+                            </p>
+                            <button
+                                className="px-8 py-3 bg-white text-black rounded-full hover:bg-gray-200 transition">
+                                Shop Now
+                            </button>
+                        </div>
+                    </div>
+                </section>
+
+                {/* Aishu Categories Section */}
+                <section className="bg-gradient-to-r  to-gray-800 py-16">
                     <div className="container mx-auto px-4">
-                        <h2 className="text-2xl font-semibold text-center  mb-8 mt-8 text-gray-800 tracking-tight">AISHU
-                            Categories</h2>
-                        <div
-                            className="grid  sm:grid-cols-3 md:grid-cols-3 lg:grid-cols-8 gap-5 text-center">
+                        <h2 className="text-2xl font-semibold text-center mb-8 mt-8 text-gray-800 tracking-tight">
+                            AISHU Categories
+                        </h2>
+                        <div className="grid sm:grid-cols-3 md:grid-cols-3 lg:grid-cols-8 gap-5 text-center">
                             {categories.map((category) => (
                                 <div key={category.name}
                                      className="group relative overflow-hidden rounded-lg shadow-lg transform hover:-translate-y-1 hover:scale-105 transition duration-300 ease-in-out">
-                                    <div
-                                     className="absolute inset-0 bg-gradient from-transparent to-black opacity-60"></div>
-                                    <h3 className="absolute inset-x-0 bottom-0 p-8 font-semibold text-lg text-amber-50 z-10">{category.name}</h3>
+                                    <div className="absolute inset-0 bg-gradient from-transparent to-black opacity-60"></div>
+                                    <h3 className="absolute inset-x-0 bottom-0 p-8 font-semibold text-lg text-amber-50 z-10">
+                                        {category.name}
+                                    </h3>
                                     <img src={category.image} alt={category.name}
                                          className="w-full h-60 object-cover"/>
-
                                 </div>
                             ))}
                         </div>
                     </div>
                 </section>
 
-                {/* Collection Section */}
-
-
-                {/* Trending & New Fashion Collection */}
-                <section className="py-20 bg-white">
-                    <div className="container mx-auto px-4">
-                        <h2 className="text-4xl font-bold text-center mb-10">Trending & New Fashion Collection</h2>
-                        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8">
-                            {this.state.products.map((product: ProductModel) => (
-                                <div key={product.id}
-                                     className="border p-4 rounded-lg text-center shadow-lg hover:shadow-2xl transition-shadow">
-                                    <img src={product.image} alt={product.name} className="h-48 mx-auto"/>
-                                    <h3 className="mt-4 font-semibold text-lg">{product.name}</h3>
-                                    <p className="mt-2 text-gray-600">${product.price}</p>
-                                    <button
-                                        className="mt-4 px-6 py-2 bg-black text-white rounded-full hover:bg-gray-800 transition">
-                                        Add to Cart
-                                    </button>
-                                </div>
-                            ))}
-                        </div>
-                    </div>
-                </section>
+                {/* More Sections can be added below as needed */}
             </div>
         );
     }

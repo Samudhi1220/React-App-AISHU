@@ -28,21 +28,15 @@ export class Footer extends Component {
                     </div>
 
 
-
-
-
-
-
-
                     <div className="bg-gray-800 text-gray-200 py-10">
-                        <div className="container mx-auto grid grid-cols-1 md:grid-cols-4 gap-8">
+                        <div className="container mx-auto grid grid-cols-1 md:grid-cols-4 gap-10">
 
-                            <div>
+                            <div className="px-10">
                                 <h3 className="text-lg font-semibold mb-4">Sign Up Now & Get 10% Off</h3>
                                 <p className="text-gray-400 mb-4">Get timely updates from your favorite products.</p>
                                 <form>
                                     <input type="email" placeholder="Email Address" className="px-4 py-2 border border-gray-500 rounded w-full mb-2"/>
-                                    <button type="submit" className="w-full bg-blue-600 text-white px-4 py-2 rounded">Subscribe</button>
+                                    <button type="submit" className="w-full bg-black text-white px-4 py-2 rounded">Subscribe</button>
                                 </form>
                             </div>
 
